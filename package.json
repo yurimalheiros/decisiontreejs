@@ -8,6 +8,8 @@
     "cytoscape": "^2.7.10"
   },
   "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.46",
     "babel": "^6.5.2",
     "babel-core": "^6.17.0",
@@ -21,6 +23,7 @@
     "typescript": "^2.0.3"
   },
   "scripts": {
+    "pretest": "tsc test/*.ts --module commonjs --target es6",
     "test": "mocha --compilers js:babel-core/register"
   },
   "author": "Yuri Malheiros",
