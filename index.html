@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Decision Tree</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="left">Decision Tree</h1>
+		<div class="right author">
+			Developed by <a href="http://twitter.com/yurimalheiros">@yurimalheiros</a>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="left">
+			<h2>Data</h2>
+
+			<table id="table">
+				<thead>
+					<tr>
+						<th>Outlook</th>
+						<th>Temperature</th>
+						<th>Humidity</th>
+						<th>Wind</th>
+						<th>Play</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny" selected>sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot" selected>hot</option> 
+                  <option value="mild">mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high" selected>high</option> 
+                  <option value="normal">normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong">strong</option> 
+                  <option value="weak" selected>weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true">true</option> 
+                  <option value="false" selected>false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny" selected>sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot" selected>hot</option> 
+                  <option value="mild">mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high" selected>high</option> 
+                  <option value="normal">normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong" selected>strong</option> 
+                  <option value="weak">weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true">true</option> 
+                  <option value="false" selected>false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast" selected>overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot" selected>hot</option> 
+                  <option value="mild">mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high" selected>high</option> 
+                  <option value="normal">normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong">strong</option> 
+                  <option value="weak" selected>weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain" selected>rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild" selected>mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high" selected>high</option> 
+                  <option value="normal">normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong">strong</option> 
+                  <option value="weak" selected>weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain" selected>rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild">mild</option>
+                  <option value="cool" selected>cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high">high</option> 
+                  <option value="normal" selected>normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong">strong</option> 
+                  <option value="weak" selected>weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain" selected>rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild">mild</option>
+                  <option value="cool" selected>cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high">high</option> 
+                  <option value="normal" selected>normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong" selected>strong</option> 
+                  <option value="weak">weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true">true</option> 
+                  <option value="false" selected>false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast" selected>overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild">mild</option>
+                  <option value="cool" selected>cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high">high</option> 
+                  <option value="normal" selected>normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong" selected>strong</option> 
+                  <option value="weak">weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny" selected>sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild" selected>mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high" selected>high</option> 
+                  <option value="normal">normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong">strong</option> 
+                  <option value="weak" selected>weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true">true</option> 
+                  <option value="false" selected>false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny" selected>sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild">mild</option>
+                  <option value="cool" selected>cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high">high</option> 
+                  <option value="normal" selected>normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong">strong</option> 
+                  <option value="weak" selected>weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain" selected>rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild" selected>mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high">high</option> 
+                  <option value="normal" selected>normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong">strong</option> 
+                  <option value="weak" selected>weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny" selected>sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild" selected>mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high">high</option> 
+                  <option value="normal" selected>normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong" selected>strong</option> 
+                  <option value="weak">weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast" selected>overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild" selected>mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high" selected>high</option> 
+                  <option value="normal">normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong" selected>strong</option> 
+                  <option value="weak">weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain">rain</option>
+                  <option value="overcast" selected>overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot" selected>hot</option> 
+                  <option value="mild">mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high">high</option> 
+                  <option value="normal" selected>normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong">strong</option> 
+                  <option value="weak" selected>weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true" selected>true</option> 
+                  <option value="false">false</option>
+                </select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="select">
+                  <option value="sunny">sunny</option> 
+                  <option value="rain" selected>rain</option>
+                  <option value="overcast">overcast</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="hot">hot</option> 
+                  <option value="mild" selected>mild</option>
+                  <option value="cool">cool</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="high" selected>high</option> 
+                  <option value="normal">normal</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="strong" selected>strong</option> 
+                  <option value="weak">weak</option>
+                </select>
+						</td>
+						<td>
+							<select name="select">
+                  <option value="true">true</option> 
+                  <option value="false" selected>false</option>
+                </select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<a id="generate" class="btn" href="">Generate Tree</a>
+		</div>
+
+		<div class="right">
+			<div id="cy"></div>
+		</div>
+	</div>
+
+	<script src="bundle.js" charset="utf-8"></script>
+</body>
+
+</html>
