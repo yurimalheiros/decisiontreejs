@@ -66,6 +66,7 @@ a:hover {
 
 .btn:hover {
     background-color: #3a75ff;
+    text-decoration: none;
 }
 
 .author {

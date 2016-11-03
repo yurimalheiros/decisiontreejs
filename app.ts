@@ -1,6 +1,6 @@
-import { Table, Column } from './table'
-import { DecisionTree } from './decisiontree'
-import { Draw } from './draw'
+import { Table, Column } from './lib/table'
+import { DecisionTree } from './lib/decisiontree'
+import { Draw } from './lib/draw'
 
 // initial table
 let table = new Table('Outlook', 'Temperature', 'Humidity', 'Wind', 'Play');

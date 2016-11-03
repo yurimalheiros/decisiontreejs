@@ -1,5 +1,5 @@
 import {expect, assert} from 'chai';
-import {ArrayTools} from '../arraytools'
+import {ArrayTools} from '../lib/arraytools'
 
 describe('ArrayTools', () => {
   describe('fill', () => {

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Table } from '../table'
+import { Table } from '../lib/table'
 
 describe('Table', () => {
   var table: Table;

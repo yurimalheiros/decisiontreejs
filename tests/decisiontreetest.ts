@@ -1,7 +1,7 @@
 import { expect } from 'chai';
-import { ArrayTools } from '../arraytools'
-import { DecisionTree, Node } from '../decisionTree'
-import { Table } from '../table'
+import { ArrayTools } from '../lib/arraytools'
+import { DecisionTree, Node } from '../lib/decisionTree'
+import { Table } from '../lib/table'
 
 describe('DecisionTree', () => {
   var dt: DecisionTree;
