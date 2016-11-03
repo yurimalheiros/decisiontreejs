@@ -19,3 +19,11 @@ webpack
 ```
 
 Now you can open the ```index.html``` file.
+
+# How to test
+
+Run the tests using ```npm```:
+
+```
+npm test
+```
