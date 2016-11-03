@@ -1,6 +1,6 @@
 # Decision Tree
 
-This project provides an way to easily visualize the results
+This project provides an way to visualize easily the results
 of the ID3 Decision Tree algorithm. The data is based on the
 example showed in the Tom Mitchell's Machine Learning book.
 
